@@ -51,10 +51,10 @@ The following code requests *RECORD_AUDIO* permission (it must be declared in *A
 ```csharp
 public async void RequestPermission()
 {
-	AndroidRuntimePermissions.Permission result = await AndroidRuntimePermissions.RequestPermissionAsync( "android.permission.RECORD_AUDIO" );
-	if( result == AndroidRuntimePermissions.Permission.Granted )
-		Debug.Log( "Microphone permission Granted!" );
+	AndroidRuntimePermissions.Permission result = await AndroidRuntimePermissions.RequestPermissionAsync("android.permission.RECORD_AUDIO");
+	if(result == AndroidRuntimePermissions.Permission.Granted)
+		Debug.Log("Microphone permission Granted!");
 	else
-		Debug.Log( $"Permission state: {result}" );
+		Debug.Log($"Permission state: {result}");
 }
 ```

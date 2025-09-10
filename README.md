@@ -1,6 +1,6 @@
 # UniDroid Permissions
 
-![runtime_permission](Images/permission.png)
+![runtime_permission](Images/Permission.png)
 
 *Based on Unity Android Runtime Permissions (MIT License): https://github.com/yasirkula/UnityAndroidRuntimePermissions*
 

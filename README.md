@@ -46,7 +46,7 @@ You can use the following *static* functions of **AndroidRuntimePermissions** to
 
 ## EXAMPLE CODE
 
-The following code requests *ACCESS_FINE_LOCATION* permission (it must be declared in *AndroidManifest*) when bottom-right corner of the screen is touched:
+The following code requests *RECORD_AUDIO* permission (it must be declared in *AndroidManifest*) when bottom-right corner of the screen is touched:
 
 ```csharp
 public async void RequestPermission()

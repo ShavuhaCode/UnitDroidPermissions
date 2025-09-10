@@ -1,9 +1,9 @@
 {
-  "name": "com.ShavuhaCode.UnitDroidPermissions",
+  "name": "com.shavuhacode.UnitDroidPermissions",
   "displayName": "UnitDroid Permissions",
   "version": "1.0.0",
-  "documentationUrl": "https://github.com/yasirkula/UnityAndroidRuntimePermissions",
-  "changelogUrl": "https://github.com/yasirkula/UnityAndroidRuntimePermissions/releases",
-  "licensesUrl": "https://github.com/yasirkula/UnityAndroidRuntimePermissions/blob/master/LICENSE.txt",
+  "documentationUrl": "https://github.com/ShavuhaCode/UnitDroidPermissions",
+  "changelogUrl": "https://github.com/ShavuhaCode/UnitDroidPermissions/releases",
+  "licensesUrl": "https://github.com/ShavuhaCode/UnitDroidPermissions/blob/main/LICENSE.txt",
   "description": "This plugin will help you set up Android permissions easily."
 }

@@ -10,10 +10,10 @@ This plugin will help you set up Android permissions easily.
 
 There are 3 ways to install this plugin:
 
-- import [RuntimePermissions.unitypackage](https://github.com/yasirkula/UnityAndroidRuntimePermissions/releases) via *Assets-Import Package*
-- clone/[download](https://github.com/yasirkula/UnityAndroidRuntimePermissions/archive/master.zip) this repository and move the *Plugins* folder to your Unity project's *Assets* folder
+- import [RuntimePermissions.unitypackage](https://github.com/ShavuhaCode/UnitDroidPermissions/releases) via *Assets-Import Package*
+- clone/[download](https://github.com/ShavuhaCode/UnitDroidPermissions/archive/master.zip) this repository and move the *Plugins* folder to your Unity project's *Assets* folder
 - *(via Package Manager)* add the following line to *Packages/manifest.json*:
-  - `"com.yasirkula.androidruntimepermissions": "https://github.com/yasirkula/UnityAndroidRuntimePermissions.git",`
+  - `"com.shavuhacode.UnitDroidPermissions": "https://github.com/ShavuhaCode/UnitDroidPermissions.git",`
 
 ## HOW TO
 
@@ -46,7 +46,7 @@ You can use the following *static* functions of **AndroidRuntimePermissions** to
 
 ## EXAMPLE CODE
 
-The following code requests *ACCESS_FINE_LOCATION* permission (it must be declared in *AndroidManifest*) when bottom-right corner of the screen is touched:
+The following code requests *RECORD_AUDIO* permission (it must be declared in *AndroidManifest*) when bottom-right corner of the screen is touched:
 
 ```csharp
 public async void RequestPermission()

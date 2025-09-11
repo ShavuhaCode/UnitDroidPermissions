@@ -1,5 +1,6 @@
-package com.shavuhacode.unity;
+package com.shavuhacode.runtimepermissions;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Fragment;
 import android.content.Intent;
@@ -23,7 +24,8 @@ public class RuntimePermissionsFragment extends Fragment
 		permissionReceiver = null;
 	}
 
-	public RuntimePermissionsFragment(final RuntimePermissionsReceiver permissionReceiver)
+	@SuppressLint("ValidFragment")
+    public RuntimePermissionsFragment(final RuntimePermissionsReceiver permissionReceiver)
 	{
 		this.permissionReceiver = permissionReceiver;
 	}

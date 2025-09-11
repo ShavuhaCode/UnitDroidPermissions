@@ -13,7 +13,7 @@ public static class UnitDroidPermissions
 {
 	public enum Permission {Denied = 0, Granted = 1, ShouldAsk = 2};
 
-	#region Native Properties
+    #region Native Properties
 #if IS_ANDROID_PLATFORM
 	private static AndroidJavaClass m_ajc = null;
 	private static AndroidJavaClass AJC
@@ -21,9 +21,9 @@ public static class UnitDroidPermissions
 		get
 		{
 			if(m_ajc == null)
-				m_ajc = new AndroidJavaClass("com.shavuhacode.unity.RuntimePermissions");
+				m_ajc = new AndroidJavaClass("com.shavuhacode.runtimepermissions.RuntimePermissions");
 
-			return m_ajc;
+            return m_ajc;
 		}
 	}
 
@@ -44,10 +44,10 @@ public static class UnitDroidPermissions
 		}
 	}
 #endif
-	#endregion
+    #endregion
 
-	#region Permission Functions
-	public static void OpenSettings()
+    #region Permission Functions
+    public static void OpenSettings()
 	{
 #if IS_ANDROID_PLATFORM
 		AJC.CallStatic("OpenSettings", Context);

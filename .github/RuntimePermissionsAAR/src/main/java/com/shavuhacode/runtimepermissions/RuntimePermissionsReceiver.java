@@ -1,4 +1,4 @@
-package com.shavuhacode.unity;
+package com.shavuhacode.runtimepermissions;
 
 public interface RuntimePermissionsReceiver
 {

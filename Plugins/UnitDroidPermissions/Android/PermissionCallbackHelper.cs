@@ -27,7 +27,7 @@ namespace UnitDroidPermissionsNamespace
 
 		private void Update()
 		{
-			if( mainThreadAction != null )
+			if(mainThreadAction != null)
 			{
 				try
 				{
@@ -43,7 +43,7 @@ namespace UnitDroidPermissionsNamespace
 				finally
 				{
 					if(autoDestroyWithCallback)
-						Destroy( gameObject );
+						Destroy(gameObject);
 				}
 			}
 		}

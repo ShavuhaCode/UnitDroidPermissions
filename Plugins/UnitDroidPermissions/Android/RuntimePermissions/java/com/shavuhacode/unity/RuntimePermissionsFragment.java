@@ -52,14 +52,14 @@ public class RuntimePermissionsFragment extends Fragment
 		{
 			Log.e("Unity", "Fragment data got reset while asking permissions!");
 
-			getFragmentManager().beginTransaction().remove( this ).commitAllowingStateLoss();
+			getFragmentManager().beginTransaction().remove(this).commitAllowingStateLoss();
 			return;
 		}
 
 		int resolvedPermissionCount = 0;
 		ArrayList<Integer> permissionsResult = new ArrayList<Integer>(m_permissions.length);
 		for(int i = 0; i < m_permissions.length; i++)
-			permissionsResult.add( 2 );
+			permissionsResult.add(2);
 
 		for(int i = 0; i < permissions.length && i < grantResults.length; i++)
 		{
@@ -103,12 +103,12 @@ public class RuntimePermissionsFragment extends Fragment
 			result += permissionsResult.get(i);
 
 		permissionReceiver.OnPermissionResult(result);
-		getFragmentManager().beginTransaction().remove( this ).commitAllowingStateLoss();
+		getFragmentManager().beginTransaction().remove(this).commitAllowingStateLoss();
 
 		try
 		{
 			Intent resumeUnityActivity = new Intent(getActivity(), getActivity().getClass());
-			resumeUnityActivity.setFlags( Intent.FLAG_ACTIVITY_REORDER_TO_FRONT );
+			resumeUnityActivity.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 			getActivity().startActivityIfNeeded(resumeUnityActivity, 0);
 		}
 		catch(Exception e)

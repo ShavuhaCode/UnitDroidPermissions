@@ -10,7 +10,7 @@ namespace UnitDroidPermissionsNamespace
 		private readonly Action<UnitDroidPermissions.Permission[]> callback;
 		private readonly PermissionCallbackHelper callbackHelper;
 
-		internal PermissionCallback(string[] permissions, Action<UnitDroidPermissions.Permission[]> callback) : base("com.com.shavuhacode.unity.RuntimePermissionsReceiver")
+		internal PermissionCallback(string[] permissions, Action<UnitDroidPermissions.Permission[]> callback) : base("com.shavuhacode.unity.RuntimePermissionsReceiver")
 		{
 			this.permissions = permissions;
 			this.callback = callback;
@@ -18,7 +18,7 @@ namespace UnitDroidPermissionsNamespace
 		}
 
 		[UnityEngine.Scripting.Preserve]
-		public void OnPermissionResult( string result )
+		public void OnPermissionResult(string result)
 		{
 			callbackHelper.CallOnMainThread(() => callback(UnitDroidPermissions.ProcessPermissionRequestResult(permissions, result)));
 		}

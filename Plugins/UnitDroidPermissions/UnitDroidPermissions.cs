@@ -11,7 +11,7 @@ using UnitDroidPermissionsNamespace;
 
 public static class UnitDroidPermissions
 {
-	public enum Permission { Denied = 0, Granted = 1, ShouldAsk = 2 };
+	public enum Permission {Denied = 0, Granted = 1, ShouldAsk = 2};
 
 	#region Native Properties
 #if IS_ANDROID_PLATFORM
@@ -21,7 +21,7 @@ public static class UnitDroidPermissions
 		get
 		{
 			if(m_ajc == null)
-				m_ajc = new AndroidJavaClass("com.com.shavuhacode.unity.RuntimePermissions");
+				m_ajc = new AndroidJavaClass("com.shavuhacode.unity.RuntimePermissions");
 
 			return m_ajc;
 		}
@@ -130,9 +130,9 @@ public static class UnitDroidPermissions
 		if( permissions == null || permissions.Length == 0 )
 			throw new ArgumentException("Parameter 'permissions' is null or empty!");
 
-		for( int i = 0; i < permissions.Length; i++ )
+		for(int i = 0; i < permissions.Length; i++)
 		{
-			if( string.IsNullOrEmpty( permissions[i] ) )
+			if(string.IsNullOrEmpty( permissions[i]))
 				throw new ArgumentException("A permission is null or empty!");
 		}
 	}

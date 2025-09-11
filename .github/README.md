@@ -13,7 +13,7 @@ There are 3 ways to install this plugin:
 - import [UniDroid Permissions.unitypackage](https://github.com/ShavuhaCode/UnitDroidPermissions/releases) via *Assets-Import Package*
 - clone/[download](https://github.com/ShavuhaCode/UnitDroidPermissions/archive/master.zip) this repository and move the *Plugins* folder to your Unity project's *Assets* folder
 - *(via Package Manager)* add the following line to *Packages/manifest.json*:
-  - `"com.shavuhacode.UnitDroidPermissions": "https://github.com/ShavuhaCode/UnitDroidPermissions.git",`
+  - `"com.shavuhacode.unitdroidpermissions": "https://github.com/ShavuhaCode/UnitDroidPermissions.git",`
 
 ## HOW TO
 

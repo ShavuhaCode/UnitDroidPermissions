@@ -51,7 +51,7 @@ The following code requests *RECORD_AUDIO* permission (it must be declared in *A
 ```csharp
 void Start()
 {
-        RequestPermission();
+	RequestPermission();
 }
 
 async void RequestPermission()

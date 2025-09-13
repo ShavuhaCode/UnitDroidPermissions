@@ -55,7 +55,7 @@ void Start()
 	        RequestPermission();
 }
 
-void RequestPermission()
+async void RequestPermission()
 {
 	AndroidRuntimePermissions.Permission result = await AndroidRuntimePermissions.RequestPermissionAsync("android.permission.RECORD_AUDIO");
 	if(result == AndroidRuntimePermissions.Permission.Granted)

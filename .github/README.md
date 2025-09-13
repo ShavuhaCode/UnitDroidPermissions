@@ -57,8 +57,8 @@ void Start()
 
 async void RequestPermission()
 {
-	AndroidRuntimePermissions.Permission result = await AndroidRuntimePermissions.RequestPermissionAsync("android.permission.RECORD_AUDIO");
-	if(result == AndroidRuntimePermissions.Permission.Granted)
+	UnitDroidPermissions.Permission result = await UnitDroidPermissions.RequestPermissionAsync("android.permission.RECORD_AUDIO");
+	if(result == UnitDroidPermissions.Permission.Granted)
 		Debug.Log("We have permission to microphone!");
 	else
 		Debug.Log("Permission state: " + result);
